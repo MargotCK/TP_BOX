@@ -19,12 +19,12 @@ public $_stamina;
 public $_speed; 
 public $_strength;
 
-public function __construct($name ='Ippo', $stamina ='20762', $speed ='90', $strength ='1721')
+public function __construct($name, $stamina, $speed, $strength)
 {
     $this->setName($name);
     $this->setStamina($stamina);
     $this->setSpeed($speed);
-    $this->setStrenght($strength);
+    $this->setStrength( $strength);
  
 }
 
@@ -58,10 +58,12 @@ return $this->_stamina;
 
 public function setSpeed($speed)
 {
-if( is_string($speed))
+if( is_integer($speed))
 {$this->_speed = $speed;}
-else
-{ return false;}
+
+{ 
+    return false;
+}
 }
 
 public function getSpeed()
@@ -70,22 +72,25 @@ return $this->_speed;
 }
 
 
-public function setStrenght($strength)
+public function setStrength($strength)
 {
-if( is_string($strength))
-{$this->_strenght = $strength;}
+if( is_integer($strength))
+{$this->_strength = $strength;}
 else
-{ return false;}
+{ 
+    return false;
+}
 }
 
-public function getStrenght()
+public function getStrength()
 {
-return $this->_strenght;
+return $this->_strength;
 }
 
 }
 
-$Ippo = new ippo();
+$Ippo = new Ippo('Ippo', '20762', '90', '1721');
+
 
 
 

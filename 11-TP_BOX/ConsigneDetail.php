@@ -1,7 +1,8 @@
 1 -> Class Ippo (dans un fichier Ippo.php)
 
 Créez une classe Ippo. Cette classe doit avoir 4 propriétés (name, stamina, speed, strength). Chacune de ces propriétés doit avoir un getter et un setter. 
-Un constructeur est attendu pour initialiser les setters. Ensuite, créez un objet de cette classe et fournissez à votre constructeur les valeurs suivantes :
+Un constructeur est attendu pour initialiser les setters. Ensuite, créez un objet de cette classe 
+et fournissez à votre constructeur les valeurs suivantes :
 
 - Ippo pour le name
 - 20762 pour la stamina (la stamina représente les points de vie du boxeur)
@@ -10,7 +11,8 @@ Un constructeur est attendu pour initialiser les setters. Ensuite, créez un obj
 
 2 - Class Challenger (Dans un fichier challenger.php)
 
-Faites exactement la même chose que la classe Ippo dans cette classe. Modifiez simplement les valeurs fournies à votre constructeur.
+Faites exactement la même chose que la classe Ippo dans cette classe. 
+Modifiez simplement les valeurs fournies à votre constructeur.
 
 3 -> Créer une classe Fight (Dans un fichier Fight.php)
 
