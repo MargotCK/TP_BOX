@@ -27,17 +27,50 @@ Ajoutez la probabilité d'effectuer un coup critique (strength multiplié par 2)
 class Fight
 { 
 
-    
 public function fighting($ippo, $challenger)
-{
-    for ($i=0; $i <=10; $i++) 
     {
+        for ($i=0; $i <=10; $i++) 
+        {
         echo "stamina  ($i) \n";
-    
+     }
+
+    return 
+    $soustraction1 = $staminaIppo - $staminaChallenger ;
+    echo"la stamina restante de Ippo est de $staminaIppo";
+
+    $soustraction2 = $staminaChallenger- $staminaIppo;
+    echo"la stamina restante de challenger est de $staminaChallenger";
     }
-}
-}
+
+ if (staminaIppo <= 0 | $staminaChallenger >=0)
+    echo "le combat est terminé";
+
+  }
+  
+public function strenght()
+    {
+     if 
+       ($staminaIppo = $stamina * 2;)
+        return $strenghtIppo = $strenght *2;
+
+
+    if 
+        ($staminaChallenger = $stamina /2;)
+        return $strenghtChallenger = $strenght * 5;
+
+    }
+    
+
+
+
 $fight = new Fight;
 $fight->fighting($ippo, $challenger);
+
+$staminaIppo = $ippo->stamina;
+$staminaChallenger = $challenger->stamina;
+
+$strenghtIppo = $ippo->strenght;
+$strenghtChallenger = $challenger->strenght;
+
 
 ?>
